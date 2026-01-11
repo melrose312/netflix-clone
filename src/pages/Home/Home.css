@@ -11,7 +11,7 @@
 .landing__caption {
   position: absolute;
   width: 100%;
-  padding-left: 6% 6%;
+  padding-left: 6%;
   bottom: 0;
 }
 
@@ -72,4 +72,8 @@
 
 .landing__btns .btn.dark-btn:hover {
   background: #6d6d6e66;
+}
+
+.more__cards {
+  padding-left: 6%;
 }
