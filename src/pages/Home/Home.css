@@ -5,13 +5,13 @@
 .banner__img {
   width: 100%;
   mask-image: linear-gradient(to right, transparent, black 75%);
-  -weblit-mask-image: linear-gradient(to right, transparent, black 75%);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
 }
 
 .landing__caption {
   position: absolute;
   width: 100%;
-  padding-left: 6%;
+  padding-left: 6% 6%;
   bottom: 0;
 }
 
@@ -19,18 +19,26 @@
   width: 90%;
   max-width: 420px;
   margin-bottom: 30px;
+  margin-left: 40px;
 }
 
 .landing__caption {
-  max-width: 700px;
-  font-size: 17px;
+  width: 100%;
+  /* max-width: 700px; */
+  font-size: 16px;
   margin-bottom: 20px;
+}
+
+.landing__caption p {
+  margin-bottom: 25px;
+  margin-left: 40px;
 }
 
 .landing__btns {
   display: flex;
   gap: 10px;
   margin-bottom: 50px;
+  margin-left: 40px;
 }
 
 .landing__btns .btn img {
@@ -40,7 +48,7 @@
 .landing__btns .btn {
   border: 0;
   outline: 0;
-  padding: 8px;
+  padding: 8px 25px;
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -52,16 +60,16 @@
 }
 
 .landing__btns .btn.dark-btn {
-   color: #fff;
-   background: #6d6d6eb3; 
+  color: #fff;
+  background: #6d6d6eb3;
 
 }
 
 .landing__btns .btn:hover {
-    background: #ffffffbf;
+  background: #ffffffbf;
 
 }
 
 .landing__btns .btn.dark-btn:hover {
-    background: #6d6d6e66;
+  background: #6d6d6e66;
 }

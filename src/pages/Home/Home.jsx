@@ -14,7 +14,7 @@ const Home = () => {
         <img src={hero_banner} alt="" className="banner__img" />
         <div className="landing__caption">
           <img src={hero_title} alt="" className="caption__img" />
-          <p>Discovering his ties to a secret ancient order, a young man living in modern Istanbul embarks on a quest to save the city from an immortal enemy.</p>
+          <p>Discovering his ties to a secret ancient order, a young man living in modern <br></br> Istanbul embarks on a quest to save the city from an immortal enemy.</p>
           <div className="landing__btns">
             <button className="btn"><img src={play_icon} alt="" />Play</button>
             <button className="btn dark-btn"><img src={info_icon} alt="" />More Info</button>
