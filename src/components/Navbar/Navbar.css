@@ -12,6 +12,7 @@
     transparent
   );
   z-index: 1;
+  transition: 0.3s;
 }
 
 .navbar__left {
@@ -78,4 +79,8 @@
 
 .navbar__profile:hover .dropdown {
     display: block;
+}
+
+.nav__dark {
+    background: #141414;
 }
