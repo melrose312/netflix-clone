@@ -62,12 +62,10 @@
 .landing__btns .btn.dark-btn {
   color: #fff;
   background: #6d6d6eb3;
-
 }
 
 .landing__btns .btn:hover {
   background: #ffffffbf;
-
 }
 
 .landing__btns .btn.dark-btn:hover {
@@ -76,4 +74,53 @@
 
 .more__cards {
   padding-left: 6%;
+}
+
+@media (max-width: 1024px) {
+  .landing__caption .title__cards {
+    display: none;
+  }
+
+  .landing__btns {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .landing__caption {
+    padding-left: 4%;
+  }
+
+  .caption__img {
+    margin-bottom: 10px;
+    width: 40%;
+  }
+
+  .landing__caption p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .btn img {
+    width: 20px;
+  }
+
+  .more__cards {
+    padding-left: 4%;
+  }
+}
+
+@media (max-width: 500px) {
+  .caption__img {
+    display: none;
+  }
+  .landing__btns .btn img {
+    width: 15px;
+  }
+
+  .landing__btns .btn {
+    padding: 4px 10px;
+    gap: 5px;
+    font-size: 10px;
+  }
 }
