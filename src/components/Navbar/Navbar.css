@@ -1,28 +1,26 @@
 .navbar {
-  width: 100%;
-  padding: 20px 6%;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  font-size: 14px;
-  color: #e5e5e5;
-  background-image: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.7) 10%,
-    transparent
-  );
-  z-index: 1;
-  transition: 0.3s;
+    width: 100%;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    font-size: 14px;
+    color: #e5e5e5;
+    background-image: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.7) 10%,
+            transparent);
+    z-index: 1;
+    transition: 0.3s;
 }
 
 .navbar__left {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
 .navbar__left img {
-  width: 90px;
+    width: 90px;
 }
 
 .navbar__left ul {
@@ -33,6 +31,23 @@
 
 .navbar__left ul li {
     cursor: pointer;
+    position: relative;
+}
+
+.navbar__left ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #e50914;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar__left ul li:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 .navbar__right {
@@ -103,6 +118,7 @@
     .navbar img {
         height: 20px;
     }
+
     .navbar__right {
         gap: 10px;
     }
